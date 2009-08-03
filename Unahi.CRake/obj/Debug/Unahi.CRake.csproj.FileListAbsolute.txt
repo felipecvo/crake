@@ -8,3 +8,8 @@ C:\Projetos\Unahi.CRake\Unahi.CRake\obj\Debug\crake.exe
 C:\Projetos\Unahi.CRake\Unahi.CRake\obj\Debug\crake.pdb
 C:\Projetos\Unahi.CRake\Unahi.CRake\bin\Debug\crake.exe
 C:\Projetos\Unahi.CRake\Unahi.CRake\bin\Debug\crake.pdb
+D:\Projects\Unahi.CRake\Unahi.CRake\obj\Debug\crake.exe
+D:\Projects\Unahi.CRake\Unahi.CRake\obj\Debug\crake.pdb
+D:\Projects\Unahi.CRake\Unahi.CRake\bin\Debug\crake.exe
+D:\Projects\Unahi.CRake\Unahi.CRake\bin\Debug\crake.pdb
+D:\Projects\Unahi.CRake\Unahi.CRake\obj\Debug\ResolveAssemblyReference.cache

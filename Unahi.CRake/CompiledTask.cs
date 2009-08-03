@@ -8,11 +8,8 @@ using System.Reflection;
 namespace Unahi.CRake {
     public class CompiledTask {
         public string Key { get; set; }
-        public CompilerResults Compiled { get; set; }
-        public Assembly CompiledAssembly {
-            get {
-                return Compiled.CompiledAssembly;
-            }
-        }
+        public string Description { get; set; }
+        public string MethodName { get; set; }
+        public string ClassName { get; set; }
     }
 }

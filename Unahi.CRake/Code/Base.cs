@@ -8,9 +8,12 @@ namespace Unahi.CRake.Code {
         public Base() {
             Namespaces = new List<Namespace>();
             Tasks = new List<Task>();
+            Imports = new List<string>();
         }
 
         public List<Namespace> Namespaces { get; set; }
         public List<Task> Tasks { get; set; }
+        public List<string> Imports { get; set; }
+        public string Name { get; set; }
     }
 }

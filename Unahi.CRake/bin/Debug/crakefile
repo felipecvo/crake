@@ -1,4 +1,5 @@
 require 'System'
+imports System;
 
 namespace :db do
     desc "create the database"

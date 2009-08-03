@@ -27,51 +27,59 @@ namespace Unahi.CRake {
 
             if (ShowTasks) {
                 foreach (var task in binary.Tasks) {
-                    Console.WriteLine(task.Key);
+                    Console.WriteLine(string.Format("{0}\t{1}", task.Key, task.Description));
                 }
                 return;
             }
 
             if (Arguments.Values.Count > 0) {
-                CodeNamespace codeNamespace = new CodeNamespace("Unahi.CRake.RuntimeGenerated");
-                CodeCompileUnit codeUnit = new CodeCompileUnit();
-                codeUnit.Namespaces.Add(codeNamespace);
-                CodeDomProvider compiler2 = CodeDomProvider.CreateProvider("CSharp");
-                string[] references = new string[2] { "System.Web.dll", "System.dll" };
-                CompilerParameters parameters = new CompilerParameters(references);
+                //CodeNamespace codeNamespace = new CodeNamespace("Unahi.CRake.RuntimeGenerated");
+                //CodeCompileUnit codeUnit = new CodeCompileUnit();
+                //codeUnit.Namespaces.Add(codeNamespace);
+                //CodeDomProvider compiler2 = CodeDomProvider.CreateProvider("CSharp");
+                //string[] references = new string[2] { "System.Web.dll", "System.dll" };
+                //CompilerParameters parameters = new CompilerParameters(references);
 
-                codeNamespace.Imports.Add(new CodeNamespaceImport("System"));
+                //codeNamespace.Imports.Add(new CodeNamespaceImport("System"));
 
-                CodeTypeDeclaration type = new CodeTypeDeclaration();
-                type.IsClass = true;
-                type.Name = "Namespace";
-                type.Attributes = MemberAttributes.Public;
-                codeNamespace.Types.Add(type);
+                //CodeTypeDeclaration type = new CodeTypeDeclaration();
+                //type.IsClass = true;
+                //type.Name = "Namespace";
+                //type.Attributes = MemberAttributes.Public;
+                //codeNamespace.Types.Add(type);
 
-                CodeMemberMethod testMethod = new CodeMemberMethod();
-                testMethod.Name = "DynamicMethod";
-                testMethod.Attributes = MemberAttributes.Public;
-                testMethod.Statements.Add(new CodeSnippetStatement("Console.WriteLine(\"oi\");"));
-                type.Members.Add(testMethod);
+                //CodeMemberMethod testMethod = new CodeMemberMethod();
+                //testMethod.Name = "DynamicMethod";
+                //testMethod.Attributes = MemberAttributes.Public;
+                //testMethod.Statements.Add(new CodeSnippetStatement("Console.WriteLine(\"oi\");"));
+                //type.Members.Add(testMethod);
 
-                CompilerResults results = compiler2.CompileAssemblyFromDom(parameters, codeUnit);
+                //CompilerResults results = compiler2.CompileAssemblyFromDom(parameters, codeUnit);
 
-                var objectTask2 = results.CompiledAssembly.CreateInstance("Unahi.CRake.RuntimeGenerated.Namespace");
-                objectTask2.GetType().InvokeMember("DynamicMethod", BindingFlags.InvokeMethod, null, objectTask2, null);
+                //var objectTask2 = results.CompiledAssembly.CreateInstance("Unahi.CRake.RuntimeGenerated.Namespace");
+                //objectTask2.GetType().InvokeMember("DynamicMethod", BindingFlags.InvokeMethod, null, objectTask2, null);
+
+                if (binary.CompiledResult.Errors.HasErrors) {
+                    foreach (CompilerError error in binary.CompiledResult.Errors) {
+                        Console.WriteLine(error.ErrorText);
+                    }
+                    return;
+                }
 
                 var key = Arguments.Values[0];
-                foreach (var task in binary.Tasks) {
-                    if (task.Key == key) {
-                        if (task.Compiled.Errors.HasErrors) {
-                            foreach (CompilerError error in task.Compiled.Errors) {
-                                Console.WriteLine(error.ErrorText);
-                            }
-                            return;
-                        }
-                        var objectTask = task.CompiledAssembly.CreateInstance("Unahi.CRake.RuntimeGenerated.Namespace");
-                        objectTask.GetType().InvokeMember("DynamicMethod", BindingFlags.InvokeMethod, null, objectTask, null);
-                    }
-                }
+                binary.InvokeMember(key);
+                //foreach (var task in binary.Tasks) {
+                //    if (task.Key == key) {
+                //        if (task.Compiled.Errors.HasErrors) {
+                //            foreach (CompilerError error in task.Compiled.Errors) {
+                //                Console.WriteLine(error.ErrorText);
+                //            }
+                //            return;
+                //        }
+                //        var objectTask = task.CompiledAssembly.CreateInstance("Unahi.CRake.RuntimeGenerated.Namespace");
+                //        objectTask.GetType().InvokeMember("DynamicMethod", BindingFlags.InvokeMethod, null, objectTask, null);
+                //    }
+                //}
             }
         }
 

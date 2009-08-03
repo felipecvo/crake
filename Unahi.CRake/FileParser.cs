@@ -8,7 +8,7 @@ using Unahi.CRake.Code;
 
 namespace Unahi.CRake {
     public class FileParser {
-        const string MethodPattern = "^(require|namespace|desc|task|end)\\s+(.+)";
+        const string MethodPattern = "^(require|namespace|desc|task|end|imports)\\s+(.+)";
         Compiler compiler = new Compiler();
         string tempDescription = string.Empty;
 
@@ -20,7 +20,7 @@ namespace Unahi.CRake {
             content = Regex.Replace(Regex.Replace(content, "\\s+", " "), "$\\s*", "");
 
             var fileParser = new FileParser(compiler);
-            while (!string.IsNullOrEmpty(content)){
+            while (!string.IsNullOrEmpty(content) && content != "end"){
                 var parser = Regex.Split(content, MethodPattern);
                 content = fileParser.ProcessMethod(fileParser.compiler, parser[1], parser[2]);
             }
@@ -41,8 +41,20 @@ namespace Unahi.CRake {
                     return ProcessDescription(parent, body);
                 case "task":
                     return ProcessTask(parent, body);
+                case "imports":
+                    return ProcessUsing(parent, body);
             }
             return null;
+        }
+
+        private string ProcessUsing(Base parent, string body) {
+            if (!(parent is Namespace) && !(parent is Compiler)) {
+                throw new InvalidOperationException("using must be inside a namespace or root.");
+            }
+
+            var split = Regex.Split(body, "([\\w\\.]+);\\s+(.*)");
+            parent.Imports.Add(split[1]);
+            return split[2];
         }
 
         private string ProcessTask(Base parent, string body) {
@@ -53,6 +65,7 @@ namespace Unahi.CRake {
                 Description = tempDescription
             };
             parent.Tasks.Add(task);
+            tempDescription = string.Empty;
             return split[3];
         }
 
@@ -75,6 +88,7 @@ namespace Unahi.CRake {
             body = split[2];
             while (method != "end") {
                 body = ProcessMethod(parent, method, body);
+                if (body == "end") break;
                 split = Regex.Split(body, MethodPattern);
                 method = split[1];
                 body = split[2];
@@ -84,7 +98,7 @@ namespace Unahi.CRake {
 
         private string ProcessRequire(string body) {
             var require = Regex.Split(body, "^['\"](.+?)['\"]\\s+(.*)$");
-            compiler.Require.Add(require[1]);
+            compiler.Require.Add(string.Format("{0}.dll", require[1]));
             return require[2];
         }
     }
