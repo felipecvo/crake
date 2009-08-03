@@ -1,0 +1,10 @@
+C:\Documents and Settings\Felipe\Configurações locais\Dados de aplicativos\Temporary Projects\Unahi.CRake\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Felipe\Configurações locais\Dados de aplicativos\Temporary Projects\Unahi.CRake\bin\Debug\crake.exe
+C:\Documents and Settings\Felipe\Configurações locais\Dados de aplicativos\Temporary Projects\Unahi.CRake\bin\Debug\crake.pdb
+C:\Documents and Settings\Felipe\Configurações locais\Dados de aplicativos\Temporary Projects\Unahi.CRake\obj\Debug\crake.exe
+C:\Documents and Settings\Felipe\Configurações locais\Dados de aplicativos\Temporary Projects\Unahi.CRake\obj\Debug\crake.pdb
+C:\Projetos\Unahi.CRake\Unahi.CRake\obj\Debug\ResolveAssemblyReference.cache
+C:\Projetos\Unahi.CRake\Unahi.CRake\obj\Debug\crake.exe
+C:\Projetos\Unahi.CRake\Unahi.CRake\obj\Debug\crake.pdb
+C:\Projetos\Unahi.CRake\Unahi.CRake\bin\Debug\crake.exe
+C:\Projetos\Unahi.CRake\Unahi.CRake\bin\Debug\crake.pdb
