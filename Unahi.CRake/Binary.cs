@@ -27,7 +27,7 @@ namespace Unahi.CRake {
                     return;
                 }
             }
-            throw new InvalidOperationException(string.Format("Unknow method '{0}'", key));
+            throw new InvalidOperationException(string.Format("Unknow task '{0}'", key));
         }
 
         private object GetInstance(string className) {

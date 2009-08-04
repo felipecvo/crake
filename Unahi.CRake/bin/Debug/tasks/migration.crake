@@ -11,4 +11,17 @@ namespace :db do
     task :migration do
         System.Console.WriteLine("fiz a migration");
     end
+
+	task :my do
+		CreateTable("");
+	end
+
+	public void CreateTable(string tableName) {
+		Console.WriteLine("Custom method in C#");
+	}
+
+	public void CreateTable2(string tableName) {
+		Console.WriteLine("Custom method in C# 2!");
+		Console.WriteLine("Table: " + tableName);
+	}
 end

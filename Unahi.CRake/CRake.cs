@@ -67,7 +67,12 @@ namespace Unahi.CRake {
                 }
 
                 var key = Arguments.Values[0];
-                binary.InvokeMember(key);
+                try {
+                    binary.InvokeMember(key);
+                } catch (Exception ex) {
+                    Console.WriteLine("CRake aborted!");
+                    Console.WriteLine(ex.Message);
+                }
                 //foreach (var task in binary.Tasks) {
                 //    if (task.Key == key) {
                 //        if (task.Compiled.Errors.HasErrors) {

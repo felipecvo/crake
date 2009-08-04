@@ -6,6 +6,10 @@ namespace :db do
     task :create do
         System.Console.WriteLine("criei o banco de dados");
     end
+	
+	task :say do
+		CreateTable2("HI");
+	end
 end
 
 namespace :tests do
