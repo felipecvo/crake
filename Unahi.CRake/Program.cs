@@ -18,16 +18,23 @@ namespace Unahi.CRake {
             Arguments = new Arguments();
         }
 
-        protected Arguments Arguments { get; set; }
+        internal Arguments Arguments { get; set; }
         public abstract void Init();
         public abstract void Run();
 
         public static void Run(string[] args) {
+            if (Instance != null) {
+                throw new InvalidOperationException("Already running...");
+            }
             var console = new T() as Base<T>;
+            Instance = console as T;
             console.Init();
             console.Arguments.Parse(args);
             console.Run();
+            Instance = null;
         }
+
+        public static T Instance { get; private set; }
     }
 
     public enum ArgumentType {

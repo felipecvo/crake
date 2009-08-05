@@ -12,3 +12,4 @@ namespace :db do
         System.Console.WriteLine("fiz a migration");
     end
 end
+

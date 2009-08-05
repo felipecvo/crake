@@ -8,7 +8,7 @@ using Unahi.CRake.Code;
 
 namespace Unahi.CRake {
     public class FileParser {
-        const string MethodPattern = "^(require|namespace|desc|task|end|imports)\\s+(.+)";
+        const string MethodPattern = "^(require|namespace|desc|task|end|imports)\\s+(.+)\\s*";
         Compiler compiler = new Compiler();
         string tempDescription = string.Empty;
 
@@ -17,7 +17,7 @@ namespace Unahi.CRake {
             reader.Dispose();
 
             content = content.Replace("\r", "").Replace("\n", " ");
-            content = Regex.Replace(Regex.Replace(content, "\\s+", " "), "$\\s*", "");
+            content = Regex.Replace(Regex.Replace(content, "\\s+", " "), "^\\s*|\\s*$", "");
 
             var fileParser = new FileParser(compiler);
             while (!string.IsNullOrEmpty(content) && content != "end"){
@@ -58,7 +58,7 @@ namespace Unahi.CRake {
         }
 
         private string ProcessTask(Base parent, string body) {
-            var split = Regex.Split(body, ":(\\w+)\\s+do\\s+(.+?)\\s+end\\s*(.*)");
+            var split = Regex.Split(body, ":(\\w+)\\s+do\\s+(.+?)\\s+end\\s*(.*)\\s*");
             var task = new Task() {
                 Body = split[2],
                 Name = split[1],
@@ -70,13 +70,13 @@ namespace Unahi.CRake {
         }
 
         private string ProcessDescription(Code.Base parent, string body) {
-            var desc = Regex.Split(body, "^['\"](.+?)['\"]\\s+(.*)$");
+            var desc = Regex.Split(body, "^['\"](.+?)['\"]\\s+(.*)\\s*$");
             tempDescription = desc[1];
             return desc[2];
         }
 
         private string ProcessNamespace(Code.Base parent, string body) {
-            var tokens = Regex.Split(body, ":(\\w+)\\s+do\\s+(.+)$");
+            var tokens = Regex.Split(body, ":(\\w+)\\s+do\\s+(.+)\\s*$");
             var namespc = new Namespace(tokens[1]);
             parent.Namespaces.Add(namespc);
             return ProcessBlock(namespc, tokens[2]);
@@ -97,8 +97,12 @@ namespace Unahi.CRake {
         }
 
         private string ProcessRequire(string body) {
-            var require = Regex.Split(body, "^['\"](.+?)['\"]\\s+(.*)$");
-            compiler.Require.Add(string.Format("{0}.dll", require[1]));
+            var require = Regex.Split(body, "^['\"](.+?)['\"]\\s+(.*)\\s*$");
+            var path = string.Format("{0}.exe", require[1]);
+            if (!File.Exists(path)) {
+                path = string.Format("{0}.dll", require[1]);
+            }
+            compiler.Require.Add(path);
             return require[2];
         }
     }

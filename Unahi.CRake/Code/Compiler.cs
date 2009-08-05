@@ -67,6 +67,7 @@ namespace Unahi.CRake.Code {
             CodeTypeDeclaration type = GetTypeDeclaration(parentType, className);
             if (type == null) {
                 type = new CodeTypeDeclaration();
+                type.BaseTypes.Add(typeof(ClassBase));
                 type.IsClass = true;
                 type.Name = className;
                 type.Attributes = MemberAttributes.Public;

@@ -47,12 +47,14 @@
   <ItemGroup>
     <Compile Include="Binary.cs" />
     <Compile Include="Code\Base.cs" />
+    <Compile Include="Code\ClassBase.cs" />
     <Compile Include="Code\Namespace.cs" />
     <Compile Include="Code\Compiler.cs" />
     <Compile Include="Code\Task.cs" />
     <Compile Include="CompiledTask.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="CRake.cs" />
+    <Compile Include="CRakeParameters.cs" />
     <Compile Include="FileParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
