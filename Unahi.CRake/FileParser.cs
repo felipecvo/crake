@@ -8,7 +8,7 @@ using Unahi.CRake.Code;
 
 namespace Unahi.CRake {
     public class FileParser {
-        const string MethodPattern = "^(require|namespace|desc|task|end|imports)\\s+(.+)\\s*";
+        const string MethodPattern = "^(require|namespace|desc|task|end|imports|public)\\s+(.+)";
         Compiler compiler = new Compiler();
         string tempDescription = string.Empty;
 
@@ -43,8 +43,20 @@ namespace Unahi.CRake {
                     return ProcessTask(parent, body);
                 case "imports":
                     return ProcessUsing(parent, body);
+                case "public":
+                    return ProcessCode(parent, body);
             }
             return null;
+        }
+
+        private string ProcessCode(Base parent, string body) {
+            if (!(parent is Namespace)) {
+                throw new InvalidOperationException("C# code is only accepted inside a namespace");
+            }
+            var split = Regex.Split(body, "(.+?{.+})\\s*(.*)");
+            var code = "public " + split[1];
+            parent.Codes.Add(code);
+            return split[2];
         }
 
         private string ProcessUsing(Base parent, string body) {

@@ -59,7 +59,7 @@ namespace Unahi.CRake.Code {
             return binary;
         }
 
-        private void CompileClass(string parent, List<Task> tasks, List<Namespace> subClasses, CodeTypeDeclaration parentType) {
+        private CodeTypeDeclaration CompileClass(string parent, List<Task> tasks, List<Namespace> subClasses, CodeTypeDeclaration parentType) {
             var className = parent.Split(':').Last();
             if (className == string.Empty) className = "root";
             className = string.Format("Class_{0}", className);
@@ -94,8 +94,14 @@ namespace Unahi.CRake.Code {
                 foreach (var item in subClass.Imports) {
                     codeNamespace.Imports.Add(new CodeNamespaceImport(item));
                 }
-                CompileClass(string.Format("{0}{1}{2}", parent, string.IsNullOrEmpty(parent) ? "" : ":", subClass.Name), subClass.Tasks, subClass.Namespaces, type);
+                var child = CompileClass(string.Format("{0}{1}{2}", parent, string.IsNullOrEmpty(parent) ? "" : ":", subClass.Name), subClass.Tasks, subClass.Namespaces, type);
+                foreach (var code in subClass.Codes) {
+                    var member = new CodeSnippetTypeMember(code);
+                    child.Members.Add(member);
+                }
             }
+
+            return type;
         }
 
         private string GetFullClassName(string parent) {
