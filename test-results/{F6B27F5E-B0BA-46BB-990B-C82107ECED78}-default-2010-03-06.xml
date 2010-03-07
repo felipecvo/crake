@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <UnitTestResult>
+      <TestDate>2010-03-06T00:09:42</TestDate>
+      <Status>Success Failure</Status>
+      <TotalFailures>3</TotalFailures>
+      <TotalSuccess>23</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2010-03-06T00:16:22</TestDate>
+      <Status>Success Failure</Status>
+      <TotalFailures>7</TotalFailures>
+      <TotalSuccess>19</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2010-03-06T00:16:57</TestDate>
+      <Status>Success Failure</Status>
+      <TotalFailures>6</TotalFailures>
+      <TotalSuccess>20</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2010-03-06T00:19:12</TestDate>
+      <Status>Success Failure</Status>
+      <TotalFailures>5</TotalFailures>
+      <TotalSuccess>21</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2010-03-06T00:20:25</TestDate>
+      <Status>Success Failure</Status>
+      <TotalFailures>5</TotalFailures>
+      <TotalSuccess>22</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2010-03-06T00:21:14</TestDate>
+      <Status>Success Failure</Status>
+      <TotalFailures>5</TotalFailures>
+      <TotalSuccess>22</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2010-03-06T00:21:37</TestDate>
+      <Status>Success Failure</Status>
+      <TotalFailures>5</TotalFailures>
+      <TotalSuccess>22</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+    </UnitTestResult>
+  </Results>
+</TestRecord>

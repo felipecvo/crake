@@ -60,7 +60,12 @@ namespace Unahi.CRake {
                 //objectTask2.GetType().InvokeMember("DynamicMethod", BindingFlags.InvokeMethod, null, objectTask2, null);
 
                 if (binary.CompiledResult.Errors.HasErrors) {
+					Console.WriteLine("Error on parsing crake's files");
                     foreach (CompilerError error in binary.CompiledResult.Errors) {
+						Console.Write(error.FileName);
+						Console.Write(":");
+						Console.Write(error.Line);
+						Console.Write(" => ");
                         Console.WriteLine(error.ErrorText);
                     }
                     return;

@@ -1,0 +1,14 @@
+namespace :db do
+
+  imports System.IO;
+
+  desc 'describe task here'
+  task :all do
+    Console.WriteLine(File.Exists("somefile.txt"));
+    Console.WriteLine("This is like rake!");
+  end
+
+  task :task1 do
+    System.Console.WriteLine("First task");
+  end
+end

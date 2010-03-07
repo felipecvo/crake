@@ -1,0 +1,37 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workbench ActiveDocument="FileParser.cs" ctype="Workbench">
+    <Files>
+      <File FileName="FileParser.cs" Line="75" Column="17" />
+      <File FileName="CRake.cs" Line="1" Column="1" />
+      <File FileName="Code/Compiler.cs" Line="208" Column="42" />
+      <File FileName="Configuration.cs" Line="1" Column="1" />
+      <File FileName="CompiledTask.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Task.cs" Line="1" Column="1" />
+      <File FileName="Code/Task.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Unahi.CRake" expanded="True">
+            <Node name="Code" expanded="True" />
+            <Node name="FileParser.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

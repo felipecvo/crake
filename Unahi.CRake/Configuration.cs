@@ -8,7 +8,10 @@ namespace Unahi.CRake {
     public class Configuration {
 
         internal static List<StreamReader> Load() {
-            var basePath = AppDomain.CurrentDomain.BaseDirectory;
+            //var basePath = AppDomain.CurrentDomain.BaseDirectory;
+			//System.Reflection.Assembly.GetExecutingAssembly().Location;
+			//var basePath = System.IO.Directory.GetCurrentDirectory();
+			var basePath = System.Environment.CurrentDirectory;
             var files = new List<StreamReader>();
 
             var path = Path.Combine(basePath, "crakefile");
