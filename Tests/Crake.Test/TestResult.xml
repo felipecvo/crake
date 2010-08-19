@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Projetos\crake\Tests\Crake.Test\Crake.Test.csproj" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-03-11" time="22:30:43">
+  <environment nunit-version="2.5.3.9345" clr-version="2.0.50727.3603" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="C:\Projetos\crake\Tests\Crake.Test" machine-name="NOTEUNAHI" user="Felipe" user-domain="NOTEUNAHI" />
+  <culture-info current-culture="pt-BR" current-uiculture="pt-BR" />
+  <test-suite name="C:\Projetos\crake\Tests\Crake.Test\Crake.Test.csproj" executed="True" success="False" time="5.031" asserts="0">
+    <results>
+      <test-suite name="C:\Projetos\crake\Tests\Crake.Test\bin\Debug\Crake.Test.dll" executed="True" success="False" time="5.031" asserts="0">
+        <results>
+          <test-suite name="Crake" executed="True" success="False" time="5.016" asserts="0">
+            <results>
+              <test-suite name="Test" executed="True" success="False" time="5.016" asserts="0">
+                <results>
+                  <test-suite name="MethodKeywordTest" executed="True" success="False" time="5.016" asserts="0">
+                    <results>
+                      <test-case name="Crake.Test.MethodKeywordTest.ShouldParse" executed="True" success="False" time="5.000" asserts="6">
+                        <failure>
+                          <message><![CDATA[  Expected string length 122 but was 112. Strings differ at index 0.
+  Expected: "\\ttext = text.ToLowerCase();\nif (text.Length > size) {\n\\t\\tre..."
+  But was:  " {\ttext = text.ToLowerCase();if (text.Length > size) {\t\tretur..."
+  -----------^
+]]></message>
+                          <stack-trace><![CDATA[em Crake.Test.MethodKeywordTest.ShouldParse() na F:\Projetos\crake\Tests\Crake.Test\Unit\Parser\Keyword\MethodKeywordTest.cs:linha 83
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

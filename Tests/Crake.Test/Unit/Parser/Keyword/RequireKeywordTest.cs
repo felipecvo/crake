@@ -92,7 +92,7 @@ namespace Crake.Test
 			var actual = require.Parse(crakeFile, ref file, "System");
 			Assert.AreEqual(null, actual);
 			Assert.IsInstanceOf<AssemblyDependency>(crakeFile.Dependencies[0]);
-			Assert.AreEqual("System", ((AssemblyDependency)crakeFile.Dependencies[0]).AssemblyName);
+            Assert.AreEqual("System", ((AssemblyDependency)crakeFile.Dependencies[0]).Name);
 		}
 		
 		[Test()]

@@ -14,7 +14,7 @@ namespace Crake.Test
 		public void ShouldRunDelegateMethod ()
 		{
 			var runned = false;
-			var task = new Task("name", delegate() {
+			var task = new Task("name", null, delegate() {
 				runned = true;
 			});
 			task.Run();
@@ -26,11 +26,11 @@ namespace Crake.Test
 		{
 			bool runned = false, pre_runned = false;
 
-			var prerequisite = new Task("prerequisite", delegate() {
+			var prerequisite = new Task("prerequisite", null, delegate() {
 				pre_runned = true;
 			});
 
-			var task = new Task("pre:name", delegate() {
+			var task = new Task("pre:name", null, delegate() {
 				runned = true;
 			});
 			

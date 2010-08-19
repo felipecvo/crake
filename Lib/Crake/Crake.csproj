@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -9,6 +9,11 @@
     <OutputType>Library</OutputType>
     <AssemblyName>Crake</AssemblyName>
     <RootNamespace>Crake</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -56,7 +61,10 @@
     <Compile Include="Parser\Keyword\TaskKeyword.cs" />
     <Compile Include="Parser\Keyword\CommentKeyword.cs" />
     <Compile Include="Parser\Keyword\DescKeyword.cs" />
-    <Compile Include="Parser\ParsedObject\PlainDesk.cs" />
+    <Compile Include="Parser\ParsedObject\PlainDesc.cs" />
+    <Compile Include="Parser\MethodParser.cs" />
+    <Compile Include="Parser\Keyword\MethodKeyword.cs" />
+    <Compile Include="Parser\ParsedObject\MethodHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

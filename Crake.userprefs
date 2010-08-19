@@ -3,16 +3,16 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/Crake.Test/Unit/Parser/Keyword/NamespaceRequireKeyword.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/Crake.Test/Unit/Parser/Keyword/MethodKeywordTest.cs" ctype="Workbench">
     <Files>
-      <File FileName="Tests/Crake.Test/Unit/Parser/Keyword/NamespaceRequireKeyword.cs" Line="211" Column="34" />
-      <File FileName="Lib/Crake/Parser/Keyword/NamespaceKeyword.cs" Line="55" Column="4" />
-      <File FileName="Lib/Crake/Parser/ParsedObject/PlainTask.cs" Line="8" Column="2" />
-      <File FileName="Tests/Crake.Test/Unit/Parser/Keyword/RequireKeywordTest.cs" Line="82" Column="46" />
-      <File FileName="Tests/Crake.Test/Unit/Parser/Keyword/ImportsKeywordTest.cs" Line="65" Column="41" />
-      <File FileName="Lib/Crake/Parser/Keyword/EndKeyword.cs" Line="20" Column="30" />
+      <File FileName="Tests/Crake.Test/Unit/Parser/CrakeFileParserTest.cs" Line="1" Column="1" />
+      <File FileName="Lib/Crake/Parser/CrakeFileDependency.cs" Line="1" Column="1" />
+      <File FileName="Lib/Crake/Workspace.cs" Line="1" Column="1" />
+      <File FileName="Lib/Crake/Parser/CrakeFileParser.cs" Line="1" Column="1" />
       <File FileName="Lib/Crake/Parser/ParsedObject/CrakeFile.cs" Line="1" Column="1" />
-      <File FileName="Lib/Crake/Parser/CrakeFileParser.cs" Line="16" Column="29" />
+      <File FileName="Lib/Crake/Parser/MethodParser.cs" Line="10" Column="6" />
+      <File FileName="Lib/Crake/Parser/Keyword/MethodKeyword.cs" Line="36" Column="1" />
+      <File FileName="Tests/Crake.Test/Unit/Parser/Keyword/MethodKeywordTest.cs" Line="78" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,7 +28,7 @@
             <Node name="Unit" expanded="True">
               <Node name="Parser" expanded="True">
                 <Node name="Keyword" expanded="True">
-                  <Node name="NamespaceRequireKeyword.cs" selected="True" />
+                  <Node name="MethodKeywordTest.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -46,7 +46,7 @@
           <Node name="Crake.Test" expanded="True">
             <Node name="Crake" expanded="True">
               <Node name="Test" expanded="True">
-                <Node name="NamespaceRequireKeyword" expanded="True" selected="True" />
+                <Node name="MethodKeywordTest" selected="True" />
               </Node>
             </Node>
           </Node>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Crake">
+</Property><Property Name="Solution File" Value="F:\Projetos\crake\Crake.sln">
+</Property><Property Name="Date" Value="quinta-feira, 11 de março de 2010">
+</Property><Property Name="Time" Value="21:20">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Crake.sln" Description="File successfully backed up as F:\Projetos\crake\Backup\Crake.sln">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Crake.csproj" Description="Project file successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Crake.csproj">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\AssemblyInfo.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Task.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Task.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\DescriptionAttribute.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\DescriptionAttribute.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\DuplicateCrakeTaskException.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\DuplicateCrakeTaskException.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\CrakeFileParser.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\CrakeFileParser.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Workspace.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Workspace.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\SyntaxErrorException.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\SyntaxErrorException.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\CrakeFileDependency.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\CrakeFileDependency.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\IDependency.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\IDependency.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\AssemblyDependency.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\AssemblyDependency.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\Keyword\IKeyword.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\Keyword\IKeyword.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\Keyword\RequireKeyword.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\Keyword\RequireKeyword.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\Keyword\UnknownKeyword.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\Keyword\UnknownKeyword.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\Keyword\ImportsKeyword.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\Keyword\ImportsKeyword.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\Keyword\NamespaceKeyword.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\Keyword\NamespaceKeyword.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\ParsedObject\IParsedObject.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\ParsedObject\IParsedObject.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\ParsedObject\CrakeFile.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\ParsedObject\CrakeFile.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\ParsedObject\PlainTask.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\ParsedObject\PlainTask.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\ParsedObject\PlainNamespace.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\ParsedObject\PlainNamespace.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\ParsedObject\TaskContainer.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\ParsedObject\TaskContainer.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\Keyword\EndKeyword.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\Keyword\EndKeyword.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\Keyword\TaskKeyword.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\Keyword\TaskKeyword.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\Keyword\CommentKeyword.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\Keyword\CommentKeyword.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\Keyword\DescKeyword.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\Keyword\DescKeyword.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\ParsedObject\PlainDesc.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\ParsedObject\PlainDesc.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\MethodParser.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\MethodParser.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\Keyword\MethodKeyword.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\Keyword\MethodKeyword.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Parser\ParsedObject\MethodHelper.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Lib\Crake\Parser\ParsedObject\MethodHelper.cs">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Crake.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Crake" Source="Lib\Crake\Crake.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Crake.Console" Source="App\Crake.Console\Crake.Console.csproj" Description="Project file successfully backed up as F:\Projetos\crake\Backup\App\Crake.Console\Crake.Console.csproj">
+</Event><Event ErrorLevel="0" Project="Crake.Console" Source="App\Crake.Console\Main.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\App\Crake.Console\Main.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Console" Source="App\Crake.Console\AssemblyInfo.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\App\Crake.Console\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Console" Source="App\Crake.Console\Crake.Console.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Crake.Console" Source="App\Crake.Console\Crake.Console.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Crake.Test.csproj" Description="Project file successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Crake.Test.csproj">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\AssemblyInfo.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\DescriptionAttributeTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\DescriptionAttributeTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\TaskTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\TaskTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\CrakeFileTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\CrakeFileTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\Parser\CrakeFileParserTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\Parser\CrakeFileParserTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\WorkspaceTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\WorkspaceTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\Parser\Keyword\RequireKeywordTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\Parser\Keyword\RequireKeywordTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\Parser\Keyword\ImportsKeywordTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\Parser\Keyword\ImportsKeywordTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\Parser\Keyword\NamespaceKeywordTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\Parser\Keyword\NamespaceKeywordTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\Parser\Keyword\DescKeywordTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\Parser\Keyword\DescKeywordTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\Parser\Keyword\TaskKeywordTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\Parser\Keyword\TaskKeywordTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\Parser\Keyword\CommentKeywordTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\Parser\Keyword\CommentKeywordTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\Parser\Keyword\EndKeywordTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\Parser\Keyword\EndKeywordTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\Parser\Keyword\UnknownKeywordTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\Parser\Keyword\UnknownKeywordTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Unit\Parser\Keyword\MethodKeywordTest.cs" Description="File successfully backed up as F:\Projetos\crake\Backup\Tests\Crake.Test\Unit\Parser\Keyword\MethodKeywordTest.cs">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Crake.Test.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Crake.Test" Source="Tests\Crake.Test\Crake.Test.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Crake.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Crake.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Crake" Source="Lib\Crake\Crake.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Crake.Console" Source="App\Crake.Console\Crake.Console.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Crake.Test" Source="Tests\Crake.Test\Crake.Test.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C741E4B-11B6-4735-BD79-A31291457514}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Crake.Test</AssemblyName>
+    <RootNamespace>Crake.Test</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework, Version=2.5.3.9345, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\usr\local\apps\nunit\bin\net-2.0\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Unit\DescriptionAttributeTest.cs" />
+    <Compile Include="Unit\TaskTest.cs" />
+    <Compile Include="Unit\CrakeFileTest.cs" />
+    <Compile Include="Unit\Parser\CrakeFileParserTest.cs" />
+    <Compile Include="Unit\WorkspaceTest.cs" />
+    <Compile Include="Unit\Parser\Keyword\RequireKeywordTest.cs" />
+    <Compile Include="Unit\Parser\Keyword\ImportsKeywordTest.cs" />
+    <Compile Include="Unit\Parser\Keyword\NamespaceKeywordTest.cs" />
+    <Compile Include="Unit\Parser\Keyword\DescKeywordTest.cs" />
+    <Compile Include="Unit\Parser\Keyword\TaskKeywordTest.cs" />
+    <Compile Include="Unit\Parser\Keyword\CommentKeywordTest.cs" />
+    <Compile Include="Unit\Parser\Keyword\EndKeywordTest.cs" />
+    <Compile Include="Unit\Parser\Keyword\UnknownKeywordTest.cs" />
+    <Compile Include="Unit\Parser\Keyword\MethodKeywordTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Lib\Crake\Crake.csproj">
+      <Project>{BA6A8223-216C-40A8-BF8C-D334367A8A06}</Project>
+      <Name>Crake</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Unit\" />
+    <Folder Include="Unit\Parser\" />
+    <Folder Include="Unit\Parser\Keyword\" />
+  </ItemGroup>
+</Project>

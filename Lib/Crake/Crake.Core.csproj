@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA6A8223-216C-40A8-BF8C-D334367A8A06}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Crake.Core</AssemblyName>
+    <RootNamespace>Crake.Core</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Compiler.cs" />
+    <Compile Include="CrakeParameters.cs" />
+    <Compile Include="Linker.cs" />
+    <Compile Include="Parser\Keyword\EmptyKeyword.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="DescriptionAttribute.cs" />
+    <Compile Include="DuplicateCrakeTaskException.cs" />
+    <Compile Include="Parser\CrakeFileParser.cs" />
+    <Compile Include="Workspace.cs" />
+    <Compile Include="Parser\SyntaxErrorException.cs" />
+    <Compile Include="Parser\CrakeFileDependency.cs" />
+    <Compile Include="Parser\IDependency.cs" />
+    <Compile Include="Parser\AssemblyDependency.cs" />
+    <Compile Include="Parser\Keyword\IKeyword.cs" />
+    <Compile Include="Parser\Keyword\RequireKeyword.cs" />
+    <Compile Include="Parser\Keyword\UnknownKeyword.cs" />
+    <Compile Include="Parser\Keyword\ImportsKeyword.cs" />
+    <Compile Include="Parser\Keyword\NamespaceKeyword.cs" />
+    <Compile Include="Parser\ParsedObject\IParsedObject.cs" />
+    <Compile Include="Parser\ParsedObject\CrakeFile.cs" />
+    <Compile Include="Parser\ParsedObject\PlainTask.cs" />
+    <Compile Include="Parser\ParsedObject\PlainNamespace.cs" />
+    <Compile Include="Parser\ParsedObject\TaskContainer.cs" />
+    <Compile Include="Parser\Keyword\EndKeyword.cs" />
+    <Compile Include="Parser\Keyword\TaskKeyword.cs" />
+    <Compile Include="Parser\Keyword\CommentKeyword.cs" />
+    <Compile Include="Parser\Keyword\DescKeyword.cs" />
+    <Compile Include="Parser\ParsedObject\PlainDesc.cs" />
+    <Compile Include="Parser\MethodParser.cs" />
+    <Compile Include="Parser\Keyword\MethodKeyword.cs" />
+    <Compile Include="Parser\ParsedObject\MethodHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Compiler\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
